@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Uwagi</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Uwagi o formularzach HTML bez JavaScript</h1>
+        </header>
+        <section>
+            <h2>Zalety czystych formularzy HTML</h2>
+            <ul>
+                <li>Prosta integracja - wystarczy tylko HTML i CSS, bez konfiguracji dodatkowych bibliotek czy skryptów.</li>
+                <li>Działają "od ręki" na każdej nowoczesnej przeglądarce.</li>
+                <li>Walidacja HTML5 pozwala na podstawowe sprawdzanie danych (np. email, liczby, zakresy) bez pisania kodu JS.</li>
+                <li>Znaczniki takie jak <strong>&lt;form&gt;</strong>, <strong>&lt;input&gt;</strong>, <strong>&lt;select&gt;</strong> oraz <strong>&lt;fieldset&gt;</strong> podnoszą dostępność i czytelność kodu.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ograniczenia i wady</h2>
+            <ul>
+                <li>Brak zaawansowanej logiki na stronie - np. dynamiczne ukrywanie pól, dodatkowa walidacja czy obsługa błędów w czasie rzeczywistym wymaga JavaScript.</li>
+                <li>Niektóre interakcje (np. wysyłka bez przeładowania strony, mechanizmy AJAX, obsługa API) nie są możliwe.</li>
+                <li>Walidacja HTML5 jest uproszczona - nie obsłuży niestandardowych reguł czy bezpieczeństwa danych.</li>
+                <li>Formularz bez JS nie pozwoli na wyświetlanie komunikatów zwrotnych przed wysłaniem danych.</li>
+                <li>Zabezpieczenia (np. sanityzacja czy filtrowanie danych) powinny być realizowane na serwerze.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Kiedy warto stosować czysty HTML?</h2>
+            <ul>
+                <li>Proste, statyczne strony informacyjne, kontaktowe lub rejestracyjne.</li>
+                <li>Formularze, których dane mają być przesyłane bezpośrednio do serwera bez potrzeby natychmiastowych zmian na stronie.</li>
+                <li>Projekty o wysokiej dostępności i prostym UX, które nie wymagają rozbudowanej interakcji.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Kiedy warto sięgnąć po JavaScript?</h2>
+            <ul>
+                <li>Gdy potrzebna jest dynamiczna walidacja, zwrotne komunikaty błędów przy wpisywaniu danych, lub rozbudowane interakcje.</li>
+                <li>W przypadku integracji z zewnętrznymi API (np. płatności, autoryzacje).</li>
+                <li>Gdy chcemy poprawić użyteczność - np. do automatycznego uzupełniania pól, przełączania podstron bez przeładowania, podpowiedzi itp.</li>
+            </ul>
+        </section>
+        <a href="index.html" class="goBackButton">Powrót</a>
+  </main>    
+</body>
+</html>
