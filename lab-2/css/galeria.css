@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(100deg, #7f7f7f, #487979, #b14848);
+    background-size: cover;
+    color: whitesmoke;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    & > h1 {
+        font-size: 400%;
+    }
+    & > p {
+        font-size: 150%;
+    }
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    top: 0;
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    & > figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 2rem 4rem ;
+        padding: 2rem;
+        height: auto;
+        box-shadow: 1px 10px 10px #00000033;
+        border-radius: 20px;
+        backdrop-filter: brightness(1.4) saturate(0.6);
+        transition: all 0.3s ease;
+        &:hover {
+            transform: scale(1.02);
+        }
+        & img {
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            width: 100%;
+            &:hover {
+                transform: scale(1.01);
+            }
+            /* 
+                Tu jeszcze można dopasować rozmiar odpowiednio
+                do wielkości ekranu, żeby obraz 500/1000 pasował
+                do ramki idealnie, bez dziur itp. 
+            */
+        }
+        & figcaption {
+            padding: 1rem;
+            font-size: 200%;
+            color: whitesmoke;
+            font-weight: bold;
+            width: 100%;
+            border-radius: 0 0 10px 10px;
+            text-align: center;
+        }
+        
+    }
+}
