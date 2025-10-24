@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
     <title>Lab 3</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/polo.css" />
   </head>
   <body>
-    <h1>Lab 3</h1>
+    <main>
+      <input type="radio" name="color" id="blue" value="blue" class="colors-toggle" checked hidden>
+      <input type="radio" name="color" id="red" value="red" class="colors-toggle" hidden>
+      <input type="radio" name="color" id="green" value="green" class="colors-toggle" hidden>
+      <input type="radio" name="color" id="yellow" value="yellow" class="colors-toggle" hidden>
+      <picture>
+        <img src="images/polo_b.png" class="img-blue" alt="Koszulka niebieska">
+        <img src="images/polo_r.png" class="img-red" alt="Koszulka czerwona">
+        <img src="images/polo_g.png" class="img-green" alt="Koszulka zielona">
+        <img src="images/polo_y.png" class="img-yellow" alt="Koszulka żółta">
+      </picture>
+
+      <div class="productDetails">
+        <div>
+          <div class="namePromotion">
+            <h3>Koszulka Polo</h3>
+            <h4>Promocja!</h4>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur minima, quibusdam vel earum iusto eligendi.</p>
+        </div>
+        <form>
+          <div class="color">
+            <legend>Kolor</legend>
+            <div>
+              <label for="blue" class="color-blue"></label>
+              <label for="red" class="color-red"></label>
+              <label for="green" class="color-green"></label>
+              <label for="yellow" class="color-yellow"></label>
+            </div>
+          </div>
+          <div class="size">
+            <legend>Rozmiar</legend>
+            <div>
+              <input type="radio" name="size" id="S" checked hidden>
+              <label for="S" class="S">S</label>
+              <input type="radio" name="size" id="M" hidden>
+              <label for="M" class="M">M</label>
+              <input type="radio" name="size" id="L" hidden>
+              <label for="L" class="L">L</label>
+              <input type="radio" name="size" id="XL" hidden>
+              <label for="XL" class="XL">XL</label>
+            </div>
+          </div>
+        </form>
+        <h3 class="price">59.99zł</h3>
+        <button class="addToCart">🛒Do koszyka</button>
+      </div>
+    </main>
     <a href="..">Powrót</a>
   </body>
 </html>
