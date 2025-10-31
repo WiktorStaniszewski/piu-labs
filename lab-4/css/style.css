@@ -4,8 +4,9 @@ html {
   font-family: system-ui, sans-serif; /* font systemowy */
   line-height: 1.5; /* lepsza czytelność */
 }
+
 body {
-  margin: 1rem;
+  background-color: #dfdfdf;
   padding: 0;
 }
 
@@ -14,6 +15,146 @@ a {
   text-decoration: none; /* bez podkreślenia */
   font-size: 1.4rem;
 }
+
 a:hover {
   text-decoration: underline; /* podkreślenie przy najechaniu */
 }
+
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  @media (width<660px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+main > div {
+  width: 25rem;
+  @media (width<900px) {
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    width: 90%;
+  }
+
+}
+
+.topPart {
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  & > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.buttons {
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  @media (width<405px) {
+    flex-direction: column;
+    align-items: center;
+    & > button {
+      width: 50vw;
+    }
+  }
+}
+
+.buttons > button {
+  color: white;
+  padding: 0.7rem;
+  font-weight: bold;
+  backdrop-filter: brightness(40%) blur(10px);
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.cards {
+  background-color: #e2fefd;
+  box-shadow: 2px 2px 10px grey;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  min-height: 20vh;
+  border: 1px solid black;
+  gap: 8px;
+  height: 59.5vh;
+  overflow-y: auto;
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  height: 130px;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  border-radius: 7px;
+}
+
+.content {
+  color: white;
+  padding: 2% 2% 0 2%;
+  width: 100%;
+  height: 66%;
+  overflow: auto;
+  border-radius: 10px;
+}
+
+.card > button {
+  font-weight: bold;
+  backdrop-filter: brightness(40%) blur(10px);
+  color: white;
+  opacity: 0;
+  width: 25%;
+  height: 25%;
+}
+
+.card:hover > button {
+  opacity: 1;
+}
+
+button {
+  border-radius: 10px;
+  background-color: transparent;
+  height: fit-content;
+
+}
+
+
+/*
+  Karty onhover -> przyciski sie pojawiają z przeniesieniem karty miedzy kolumnami
+
+  przycisk koloruj kolumne przycisk tez w topPart, kolorowanie pojedynczej karty, onhover - click, wtedy zmienia się klasa i pojawiają się kolorki dostepne
+
+  licznik kart - na dole?//na girze
+
+  localStorage - do zapisania stanu strony konkretnego teraz, można to użyć w react
+*/
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.goBackButton {
+  position: fixed;
+  bottom: 0;
+}
+

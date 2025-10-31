@@ -4,9 +4,57 @@
     <meta charset="UTF-8" />
     <title>Lab 4</title>
     <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <h1>Lab 4</h1>
-    <a href="..">Powrót</a>
+    <main>
+      <div class="column" data-column="toDo">
+        <div class="topPart">
+          <div>
+            <h2>Do zrobienia</h2>
+            <p class="counter">0</p>
+          </div>
+          <div class="buttons">
+            <button class="addCard">Dodaj Kartę</button>
+            <button class="changeColColor">Koloruj kolumnę</button>
+            <button class="sortCards">Sortuj</button>
+          </div>
+        </div>
+        <div class="cards"></div>
+      </div>
+      <div class="column" data-column="meantime">
+        <div class="topPart">
+          <div>
+            <h2>W trakcie</h2>
+            <p class="counter">0</p>
+          </div>
+          <div class="buttons">
+            <button class="addCard">Dodaj Kartę</button>
+            <button class="changeColColor">Koloruj kolumnę</button>
+            <button class="sortCards">Sortuj</button>
+          </div>
+        </div>
+        <div class="cards"></div>
+      </div>
+      <div class="column" data-column="done">
+        <div class="topPart">
+          <div>
+            <h2>Zrobione</h2>
+            <p class="counter">0</p>
+          </div>
+          <div class="buttons">
+            <button class="addCard">Dodaj Kartę</button>
+            <button class="changeColColor">Koloruj kolumnę</button>
+            <button class="sortCards">Sortuj</button>
+          </div>
+        </div>
+        <div class="cards"></div>
+      </div>
+    </main>
+    <a href=".." class="goBackButton">Powrót</a>
+    <script src="./main.js" defer></script>
   </body>
 </html>
+
+
+
