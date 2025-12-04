@@ -1,0 +1,36 @@
+body {
+   font-family: Arial, sans-serif;
+   text-align: center;
+   margin: 30px;
+   background-color: blanchedalmond;
+}
+
+button {
+   margin: 4px;
+   padding: 12px;
+   min-width: 150px;
+   cursor: pointer;
+   background: #fafafa;
+   border-radius: 10px;
+   border: 2px solid #ccc;
+   transition: transform 0.2s ease-in-out;
+   &:hover {
+      background: #eae9e9;
+      transform: translateY(-3px) scale(1.03);
+      
+   }
+}
+
+#loader {
+   display: none;
+   font-weight: bold;
+}
+
+#error {
+   color: red;
+   font-weight: bold;
+}
+
+li {
+   list-style-type: none;
+}
