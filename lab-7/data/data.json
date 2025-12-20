@@ -1,0 +1,11 @@
+[
+  { "id": 1, "name": "Koszulka Basic", "price": 49.99, "image": "./images/basic_t-shirt.jpg", "colors": "biały, czarny", "sizes": "S, M, L" },
+  { "id": 2, "name": "Bluza Hoodie", "price": 129.99, "image": "./images/hoodie.jpg", "sizes": "M, L", "promotion": "20% zniżki" },
+  { "id": 3, "name": "Jeansy Flare Fit", "price": 159.99, "image": "./images/jeans.jpg", "colors": "denim" },
+  { "id": 4, "name": "Koszula Oxford", "price": 99.99, "image": "./images/oxford.jpg", "colors": "biały, niebieski", "sizes": "S, M, L, XL" },
+  { "id": 5, "name": "Spodnie Dresowe", "price": 139.99, "image": "./images/dresy.jpg", "colors": "beżowy, granatowy", "sizes": "M, L, XL", "promotion": "30% podwyżki" },
+  { "id": 6, "name": "Kurtka Jeansowa", "price": 199.99, "image": "./images/denim-jacket.jpg", "colors": "niebieski", "sizes": "M, L" },
+  { "id": 7, "name": "Sweter Klasyczny", "price": 119.99, "image": "./images/sweter.jpg", "colors": "szary, czarny", "sizes": "S, M, L" },
+  { "id": 8, "name": "Czapka Beanie", "price": 39.99, "image": "./images/beanie.jpg", "colors": "czarny, oliwkowy" },
+  { "id": 9, "name": "Buty", "price": 439.99, "image": "./images/sneakers.jpg", "colors": "czarny, czerwony", "promotion": "40% zniżki" }
+]

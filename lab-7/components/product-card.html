@@ -4,52 +4,55 @@
     flex-direction: column;
     justify-content: space-between;
     width: 240px;
-    min-height: 300px;
+    min-height: 380px;
     border: 1px solid #ddd;
     border-radius: 12px;
     overflow: hidden;
     padding: 12px;
-    background-color: red;
     font-family: system-ui, Arial, sans-serif;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     background: white;
     box-sizing: border-box;
   }
   
-  .image {
+  .product-image {
     width: 100%;
     height: 260px;
     border-radius: 8px;
-    overflow: hidden;
-  }
-
-  .image ::slotted(img) {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
+    display: block;
+    background-color: #f0f0f0; 
   }
 
-  h2 {
+  .product-name {
     font-size: 1.1rem;
     margin: 12px 0 6px 0;
     line-height: 1.2;
+    min-height: 1.2em; 
   }
 
-  .price {
+  .product-price {
     font-size: 1.05rem;
     color: #008000;
     font-weight: 700;
     margin-bottom: 8px;
   }
 
-  .promotion {
+  .product-promotion {
+    position: absolute;
     font-size: 0.95rem;
-    color: #d00;
-    margin-bottom: 6px;
+    background-color: rgb(193, 63, 63);
+    color: #fff;
+    padding: 4px 8px;
+    width: fit-content;
+    border-radius: 12px;
+    margin: 5px;
+    min-height: 1em;
   }
 
-  .colors, .sizes {
-    margin-bottom: 10px;
+  .product-colors, 
+  .product-sizes {
+    margin-bottom: 5px;
     font-size: 0.9rem;
     color: #444;
   }
@@ -63,33 +66,32 @@
     border-radius: 8px;
     cursor: pointer;
     font-size: 1rem;
+    transition: background 0.2s;
   }
 
-  .meta {
-    margin-bottom: 10px;
+  .add-to-cart:hover {
+    background: #333;
   }
 </style>
 
-<div class="image">
-  <slot name="image"></slot>
+<div class="product-promotion">
 </div>
 
-<h2><slot name="name"></slot></h2>
+<img class="product-image" src="" alt="Zdjęcie produktu" />
 
-<div class="price">
-  <slot name="price"></slot>
+<h2 class="product-name">
+</h2>
+
+<div class="product-price">
 </div>
 
-<div class="promotion">
-  <slot name="promotion"></slot>
+
+<div class="product-colors">
 </div>
 
-<div class="colors">
-  <slot name="colors"></slot>
+<div class="product-sizes">
 </div>
 
-<div class="sizes">
-  <slot name="sizes"></slot>
-</div>
-
-<button class="add-to-cart">Do koszyka</button>
+<button class="add-to-cart">
+  Do koszyka
+</button>

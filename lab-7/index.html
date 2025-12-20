@@ -9,46 +9,14 @@
 
 </head>
 <body>
-   <h1>Karty produktów - Web Components</h1>
-   <div class="container">
-      <product-card>
-         <img slot="image" src="./images/basic_t-shirt.jpg" alt="">
-         <span slot="name">Koszulka Basic</span>
-         <span slot="price">49,99 zł</span>
-         <span slot="promotion">-20% taniej!</span>
-         <span slot="colors">Kolory: biały, czarny, granat</span>
-         <span slot="sizes">Rozmiary: S, M, L, XL</span>
-      </product-card>
-      <product-card>
-         <img slot="image" src="./images/hoodie.jpg" alt="">
-         <span slot="name">Bluza Hoodie</span>
-         <span slot="price">129,99 zł</span>
-         <span slot="sizes">Rozmiary: M, L</span>
-      </product-card>
-      <product-card>
-         <img slot="image" src="./images/jeans.jpg" alt="">
-         <span slot="name">Jeansy Flare Fit</span>
-         <span slot="price">159,99 zł</span>
-         <span slot="colors">Kolory: denim jasny, denim ciemny</span>
-      </product-card>
-      <product-card>
-         <img slot="image" src="./images/winter_coat.jpg" alt="">
-         <span slot="name">Kurtka Zimowa</span>
-         <span slot="price">299,99 zł</span>
-         <span slot="promotion">Nowość!</span>
-      </product-card>
-      <product-card>
-         <img slot="image" src="./images/summer_dress.jpg" alt="">
-         <span slot="name">Sukienka Letnia</span>
-         <span slot="price">119,99 zł</span>
-         <span slot="colors">Kolory: różowy, niebieski, biały</span>
-         <span slot="sizes">Rozmiary: XS, S, M</span>
-      </product-card>
-      <product-card>
-         <img slot="image" src="./images/sneakers.jpg" alt="">
-         <span slot="name">Sneakersy</span>
-         <span slot="price">249,99 zł</span>
-      </product-card>
-   </div>
+   <h1>Sklep internetowy</h1>
+    
+    <div style="display: flex; gap: 20px;">
+        <div id="product-list" class="container"></div>
+
+        <shopping-cart id="main-cart"></shopping-cart>
+    </div>
+
+    <script type="module" src="./js/app.js"></script>
 </body>
 </html>
